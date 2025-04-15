@@ -11,10 +11,12 @@ public class Item {
 
     //building access modifier for declared variables { to get access outside from this class }
     public String getName() {
+
         return name;
     }
 
     public Integer getQuantity() {
+
         return quantity;
     }
 }

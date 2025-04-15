@@ -1,5 +1,5 @@
 //Here I am going to learn four basic principles of Object-Oriented Programming (OOP) by creating an Inventory management system of a video game.
-//The features I will be using are: Encapsulations,
+//The features I will be using are: Encapsulations, Inheritance,
 
 public class Main {
     public static void main(String[] args) {
@@ -7,11 +7,12 @@ public class Main {
         Inventory inventory = new Inventory();
         //String string = 'String';
 
-        Item item1 = new Item ("Banana", 20);
-        Item item2 = new Item ("Bullet", 10);
+        Item item = new Item ("Generic Item", 20);
+        Fruit fruit = new Fruit( "Apple", 5, "Fuji");
 
-        inventory.addItem(item1);
-        inventory.addItem(item2);
+
+        inventory.addItem(item);
+        inventory.addItem(fruit);
 
         inventory.displayInventory();
 
