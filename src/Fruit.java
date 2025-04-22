@@ -11,7 +11,19 @@ public class Fruit extends Item{
     }
 
     public String getType(){
+
         return type;
+    }
+
+    /*
+    @Override //performed runtime polymorphism
+    public String toString(){
+        return "Fruit: " + getName() + ", Quantity: " + getQuantity() + ", Type:" + type;
+    }*/
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Weapon: " + getName() + ", Quantity: " + getQuantity() + ", Type:" + getType());
     }
 
 }

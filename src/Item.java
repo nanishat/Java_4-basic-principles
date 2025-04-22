@@ -1,4 +1,4 @@
-public class Item {
+public abstract class Item {
     //declaring variables for item
     private final String name;
     private final int quantity;
@@ -19,4 +19,12 @@ public class Item {
 
         return quantity;
     }
+
+    /*
+    @Override //performed runtime polymorphism
+    public String toString(){
+        return "Item: " + name + ", Quantity: " + quantity;
+    }*/
+
+    public abstract void displayInfo();
 }
