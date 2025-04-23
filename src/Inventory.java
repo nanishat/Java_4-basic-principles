@@ -51,6 +51,3 @@ public class Inventory {
     }
 }
 
-
-
-//KEY NOTE: Everything that in the interface, assumed as an abstract class
